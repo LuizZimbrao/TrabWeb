@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root {
+  --backgroundColor: #EBF6FA;
+  --mainColor: #1882A4;
+  --boxRadius: 8px;
+  --shadow: 2px 2px 0 0 var(--mainColor);
+}
 
 *{
   margin: 0;
@@ -15,7 +21,6 @@ body{
   height: 100vh;
   background: linear-gradient(180deg, rgba(24,130,164,1) 0%, rgba(53,204,215,1) 100%) no-repeat center;
 }
-
 
 header{
   padding: 4rem 0;
@@ -61,4 +66,61 @@ aside a{
   color: #fff;
 }
 
+aside {
+  width: 100px;
+}
 
+/* DASHBORD */
+.d-flex {
+  display: flex;
+}
+
+.dashboard-container {
+  height: 100vh;
+  background: var(--backgroundColor);
+  color: var(--mainColor);
+}
+
+.dashboard-container h2 {
+  margin: 0 0 10px 0;
+}
+
+.boxes-container {
+  padding: 20px;
+}
+
+.left-side {
+  width: 69%;
+  margin-right: 1%;
+}
+
+.top-box {
+  padding: 10px;
+  background: #fff;
+  height: 280px;
+  margin-bottom: 20px;
+  box-shadow: var(--shadow);
+  border-radius: var(--boxRadius);
+}
+
+.bottom-boxes-container {
+  display: flex;
+}
+
+.bottom-box {
+  padding: 10px;
+  background: #fff;
+  width: 32%;
+  height: 240px;
+  margin-right: 1%;
+  box-shadow: var(--shadow);
+  border-radius: var(--boxRadius);
+}
+
+.right-box {
+  width: 29%;
+  margin-left: 1%;
+  padding: 10px;
+  background: #fff;
+  box-shadow: var(--shadow);
+}
